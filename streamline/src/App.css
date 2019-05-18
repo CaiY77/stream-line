@@ -69,10 +69,12 @@
 
 
 .nav{
-  width: 1440vw;
-  height: 155px;
+  width: 100vw;
+  height: 150px;
   object-fit: contain;
   background-image: linear-gradient(to bottom, #22988d, #010505);
+  display: flex;
+  align-items: center;
 }
 .link{
   width: 142px;
@@ -86,6 +88,18 @@
   letter-spacing: 0.8px;
   color: #ffffff;
 }
+.menu{
+  margin-left: 40px;
+}
+.logo{
+  justify-content: center;
+  align-items: center;
+  margin-left: 50px;
+}
 .search{
   display: inline-block;
+  margin-left: 70px;
+}
+.chat-img{
+  margin-left: 100px;
 }
