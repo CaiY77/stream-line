@@ -59,15 +59,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
 .nav{
   width: 100vw;
   height: 150px;
@@ -79,6 +70,7 @@
 .link{
   width: 142px;
   height: 26px;
+  margin-left: 25px;
   font-family: RobotoMono;
   font-size: 20px;
   font-weight: bold;
@@ -93,7 +85,7 @@
 }
 .logo{
   justify-content: center;
-  align-items: center;
+  margin-bottom: 25px;
   margin-left: 50px;
 }
 .search{
