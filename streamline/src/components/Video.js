@@ -2,56 +2,67 @@ import React, { Component } from 'react';
 import {Feed,Button,Input,Divider,Form} from 'semantic-ui-react'
 import '../App.css'
 import Faker from 'faker'
-let commentArr = []
+import CommentForm from './CommentForm';
 class Video extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      say: ''
+      commentArr: []
     };
   }
-
-  handleChanges =(event)=>{
-    this.setState({
-      say: event.target.value
-    });
+  componentDidMount() {
+    this.comments();
   }
-
   comments = () => {
     let howMany = [1,1,1,1,1,1,1,1,1,1,1,1,1];
-
-    commentArr = howMany.map(who=>{
-      return (<Feed.Event className="event-style" >
+    let commentArray = howMany.map(who=>{
+      let name = Faker.name.findName()
+      let comment = Faker.lorem.lines()
+      return (<Feed.Event key={Faker.random.number()} className="event-style" >
         <Feed.Content>
-          <Feed.User><p className="color-grey">{Faker.name.findName()} : </p></Feed.User>
-          <Feed.Summary><p className="color-white">{Faker.lorem.lines()}</p></Feed.Summary>
+          <Feed.User><p className="color-grey">{name} : </p></Feed.User>
+          <Feed.Summary><p className="color-white">{comment}</p></Feed.Summary>
         </Feed.Content>
       </Feed.Event>)
     })
 
-    return commentArr;
+    this.setState({
+      commentArr: commentArray
+    });
+  }
+
+  handleSub=(msg)=>{
+    let array = this.state.commentArr
+    array.push(
+      <Feed.Event key={Faker.random.number()} className="event-style" >
+        <Feed.Content>
+          <Feed.User><p className="color-grey">Current User : </p></Feed.User>
+          <Feed.Summary><p className="color-white">{msg}</p></Feed.Summary>
+        </Feed.Content>
+      </Feed.Event>
+    )
+    this.setState({
+      commentArr: array
+    });
   }
 
   render() {
     return (<div className="video-contain">
       <iframe width="775" height="421"
         src={this.props.link}
-        frameborder="0"
+        frameBorder="0"
         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
+        allowFullScreen
       ></iframe>
       <div className="chat">
-        <h3 className="over">{Faker.lorem.sentence()}</h3>
+        <h3 className="over">Trying out a new game for the first time!!!</h3>
         <img className='img-icon' src={Faker.image.image()}/>
         <Divider/>
         <Feed className="feed-style">
-          {this.comments()}
+          {this.state.commentArr}
         </Feed>
 
-        <Form className="form" onSubmit={()=>this.handleSub()}>
-          <input onChange={this.handleChanges} name="say" placeholder='Say something mean ...' />
-          <Button className="button-form" type="submit" content="Send"/>
-        </Form>
+        <CommentForm handleSub={this.handleSub}/>
       </div>
     </div>);
   }
