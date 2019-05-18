@@ -6,7 +6,14 @@ class App extends Component {
   render() {
     return (
       <div>
-        <h1>Stream Line</h1>
+        <nav>
+          <Link to="/expore">Explore</Link>
+          <Link to="/following">Following</Link>
+        </nav>
+
+        <Route exact path='/' render={()=><Landing/>}/>
+        <Route path='/explore'/>
+        <Route path='/following'/>
       </div>
     );
   }
