@@ -1,5 +1,5 @@
 .landing-background{
-  /* background: #000000; */
+  background: #000000;
   width: 100vw;
   height: 100vh;
   background-attachment: fixed;
@@ -13,21 +13,44 @@
   width: 100%;
 }
 .feed-style{
-  height: 250px;
+  height: 240px;
   margin: 0 !important;
-  padding: 0 0 12px 12px;
-  border:solid;
+  padding: 0 0 12px 0;
   overflow-y: auto;
+}
+.event-style{
+  margin-bottom: 7px !important;
 }
 .chat{
   width: calc(100% - 775px);
   display: flex;
   flex-direction: column;
+  color:white !important;
+  padding-left: 12px;
+}
+.color-white{
+  color:white;
+}
+.color-grey{
+  color: darkgrey;
 }
 .img-icon{
   width: 45px;
   height: 45px;
   border-radius: 50%;
+}
+.over{
+  overflow-y: auto;
+  height: 50px;
+}
+.form{
+  display:flex;
+}
+.button-form{
+  flex:1;
+}
+.input-form{
+  flex:4;
 }
 
 

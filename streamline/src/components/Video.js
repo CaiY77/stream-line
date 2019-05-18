@@ -1,18 +1,30 @@
 import React, { Component } from 'react';
-import {Feed,Button,Input,Divider} from 'semantic-ui-react'
+import {Feed,Button,Input,Divider,Form} from 'semantic-ui-react'
 import '../App.css'
 import Faker from 'faker'
-
+let commentArr = []
 class Video extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      say: ''
+    };
+  }
+
+  handleChanges =(event)=>{
+    this.setState({
+      say: event.target.value
+    });
+  }
 
   comments = () => {
     let howMany = [1,1,1,1,1,1,1,1,1,1,1,1,1];
 
-    let commentArr = howMany.map(who=>{
-      return (<Feed.Event>
+    commentArr = howMany.map(who=>{
+      return (<Feed.Event className="event-style" >
         <Feed.Content>
-          <Feed.User>{Faker.name.findName()} : </Feed.User>
-          <Feed.Summary>{Faker.lorem.lines()}</Feed.Summary>
+          <Feed.User><p className="color-grey">{Faker.name.findName()} : </p></Feed.User>
+          <Feed.Summary><p className="color-white">{Faker.lorem.lines()}</p></Feed.Summary>
         </Feed.Content>
       </Feed.Event>)
     })
@@ -35,7 +47,11 @@ class Video extends Component {
         <Feed className="feed-style">
           {this.comments()}
         </Feed>
-        <Input placeholder="Say something mean..." />
+
+        <Form className="form" onSubmit={()=>this.handleSub()}>
+          <input onChange={this.handleChanges} name="say" placeholder='Say something mean ...' />
+          <Button className="button-form" type="submit" content="Send"/>
+        </Form>
       </div>
     </div>);
   }
