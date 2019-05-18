@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 import {Route, Link} from 'react-router-dom'
+import Landing from './components/Landing'
+import Explore from './components/Explore'
+import Following from './components/Following'
 
 class App extends Component {
 
@@ -12,8 +15,8 @@ class App extends Component {
         </nav>
 
         <Route exact path='/' render={()=><Landing/>}/>
-        <Route path='/explore'/>
-        <Route path='/following'/>
+        <Route path='/explore' render={()=><Explore/>}/>
+        <Route path='/following' render={()=><Following/>}/>
       </div>
     );
   }
