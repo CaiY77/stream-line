@@ -16,7 +16,7 @@ class Video extends Component {
       <Feed>
         <Feed.Label>Someone:</Feed.Label>
         <Feed.Content>
-          <Feed.Summary content={comment} />
+          <Feed.Summary />
         </Feed.Content>
       </Feed>
     </div>);
