@@ -15,19 +15,19 @@ class App extends Component {
       <div className="landing-background">
         <nav className="nav">
           <Link className="link" to="/activity">Activiy</Link>
-          <Link className="link" to="/explore">Explore<img src={explore} /></Link>
-          <Link className="link" to="/following">Following<img src={star}/></Link>
+          <Link className="link" to="/explore">Explore<img src={explore} alt="explore" /></Link>
+          <Link className="link" to="/following">Following<img src={star} alt="star"/></Link>
 
+          <div className="logo">
           <Link className="link" to="/">
-            <div className="logo">
-              <img src={logo} />
-            </div>
-        </Link>
+          <img src={logo} alt="logo"/>
+            </Link>
+          </div>
 
           <div className="search">
             <Search placeholder="Search"/>
           </div>
-          <img className="chat-img" src={chat} />
+          <img className="chat-img" src={chat} alt="chat-icon" />
         </nav>
 
         <Route exact path='/' render={()=><Landing/>}/>
