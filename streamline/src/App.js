@@ -10,7 +10,8 @@ class App extends Component {
     return (
       <div>
         <nav>
-          <Link to="/expore">Explore</Link>
+          <Link to="/">Home</Link>
+          <Link to="/explore">Explore</Link>
           <Link to="/following">Following</Link>
         </nav>
 

@@ -4,7 +4,9 @@ class Following extends Component {
 
   render() {
     return (
-      <div></div>
+      <div>
+        <h1>Following</h1>
+      </div>
     );
   }
 
