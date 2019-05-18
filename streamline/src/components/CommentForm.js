@@ -13,10 +13,17 @@ class CommentForm extends Component {
       say: event.target.value
     });
   }
+  passItOn = () =>{
+    this.props.handleSub(this.state.say);
+
+    this.setState({
+      say: ''
+    });
+  }
 
   render() {
     return (
-      <Form className="form" onSubmit={()=>this.props.handleSub(this.state.say)}>
+      <Form className="form" onSubmit={()=>this.passItOn()}>
         <input onChange={this.handleChanges} value={this.state.say} placeholder='Say something mean ...' />
         <Button className="button-form" type="submit" content="Send"/>
       </Form>

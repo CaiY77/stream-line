@@ -55,7 +55,7 @@ class Video extends Component {
         allowFullScreen
       ></iframe>
       <div className="chat">
-        <h3 className="over">Trying out a new game for the first time!!!</h3>
+        <h3 className="over">{Faker.lorem.sentence()}</h3>
         <img className='img-icon' src={Faker.image.image()}/>
         <Divider/>
         <Feed className="feed-style">

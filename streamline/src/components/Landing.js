@@ -4,8 +4,8 @@ import Video from './Video'
 import {Feed,Button} from 'semantic-ui-react'
 
 const links=[
-"https://www.youtube.com/embed/OUuhnZ4A9cg?controls=0&amp;autoplay=0&?start=885",
-"https://www.youtube.com/embed/UWNoSGjt_dU?controls=0&amp;autoplay=0&?start=12"
+"https://www.youtube.com/embed/OUuhnZ4A9cg?autoplay=1&?start=885",
+"https://www.youtube.com/embed/UWNoSGjt_dU?autoplay=1&?start=12"
 ]
 
 class Landing extends Component {
