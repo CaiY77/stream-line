@@ -6,13 +6,29 @@
 }
 .live{
   display: flex;
-  border:solid;
   margin: 127px 107px 0 107px;
 }
 .video-contain{
   display:flex;
+  width: 100%;
 }
-
+.feed-style{
+  height: 250px;
+  margin: 0 !important;
+  padding: 0 0 12px 12px;
+  border:solid;
+  overflow-y: auto;
+}
+.chat{
+  width: calc(100% - 775px);
+  display: flex;
+  flex-direction: column;
+}
+.img-icon{
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
 
 
 
