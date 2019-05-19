@@ -61,7 +61,6 @@ class Video extends Component {
         <Feed className="feed-style">
           {this.state.commentArr}
         </Feed>
-
         <CommentForm handleSub={this.handleSub}/>
       </div>
     </div>);
