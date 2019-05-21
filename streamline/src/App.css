@@ -95,3 +95,44 @@
 .chat-img{
   margin-left: 100px;
 }
+footer{
+  width: 1440px;
+  height: 256px;
+  margin-top: 20px;
+  background-color: #000000;
+}
+.footer{
+  display: flex;
+  justify-content: center;
+}
+.line{
+  width: 888px;
+  height: 2px;
+  border: solid 4px #ffffff;
+}
+.inner{
+  width: 169px;
+  height: 19px;
+  font-family: Raleway;
+  font-size: 16px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 0.8px;
+  text-align: center;
+  color: #ffffff;
+}
+h3{
+  width: 228px;
+  height: 19px;
+  font-family: Raleway;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 0.8px;
+  text-align: center;
+  color: #ffffff;
+}

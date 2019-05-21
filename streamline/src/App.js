@@ -8,6 +8,8 @@ import logo from './images/logo-horizontal.png'
 import chat from './images/icon-chat@2x.png'
 import explore from './images/icon-explore.png'
 import star from './images/star.png'
+
+
 class App extends Component {
 
   render() {
@@ -33,7 +35,25 @@ class App extends Component {
         <Route exact path='/' render={()=><Landing/>}/>
         <Route path='/explore' render={()=><Explore/>}/>
         <Route path='/following' render={()=><Following/>}/>
+
+        <footer>
+          <div className='footer'>
+            <div className="line"></div>
+          </div>
+          <div>
+          <Link className="inner" to="/">About us</Link>
+          <Link className="inner" to="/">Terms</Link>
+          <Link className="inner" to="/">Privacy Policy</Link>
+          <Link className="inner" to="/">Contact Us</Link>
+          <Link className="inner" to="/">Help</Link>
+          <div>
+          <h3>Copyright 2019 - Streamline</h3>
+        </footer>
+
+
+
       </div>
+
           );
           }
 
