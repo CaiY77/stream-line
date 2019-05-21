@@ -1,8 +1,8 @@
 .landing-background{
   background: #000000;
   width: 100vw;
-  height: 100vh;
-  background-attachment: fixed;
+  height: auto;
+  border:solid red;
 }
 .live{
   display: flex;
@@ -53,6 +53,24 @@
   flex:4;
 }
 
+.fort-box{
+  width: 230px;
+  height: 345px;
+  background: url(./images/fortnite.jpg);
+  background-size: contain;
+}
+.apex-box{
+  width: 230px;
+  height: 345px;
+  background: url(./images/apex.jpg);
+  background-size: contain;
+}
+.sekiro-box{
+  width: 230px;
+  height: 345px;
+  background: url(./images/sekiro.jpeg);
+  background-size: contain;
+}
 
 
 

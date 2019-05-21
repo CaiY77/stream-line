@@ -8,7 +8,20 @@ import logo from './images/logo-horizontal.png'
 import chat from './images/icon-chat@2x.png'
 import explore from './images/icon-explore.png'
 import star from './images/star.png'
+import axios from 'axios'
+
 class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      top10: []
+    };
+  }
+
+  componentDidMount() {
+    // "d42bbd1c49f5b73bd5de7469c579beda"
+    
+  }
 
   render() {
     return (

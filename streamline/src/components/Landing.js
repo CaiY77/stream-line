@@ -4,9 +4,9 @@ import Video from './Video'
 import {Feed,Button} from 'semantic-ui-react'
 
 const links=[
-"https://www.youtube.com/embed/OUuhnZ4A9cg?autoplay=1&?start=885",
-"https://www.youtube.com/embed/UWNoSGjt_dU?autoplay=1&?start=12",
-"https://www.youtube.com/embed/QsawpqAney0?autoplay=1&?start=6"
+"https://www.youtube.com/embed/OUuhnZ4A9cg?autoplay=0&?start=885",
+"https://www.youtube.com/embed/UWNoSGjt_dU?autoplay=0&?start=12",
+"https://www.youtube.com/embed/QsawpqAney0?autoplay=0&?start=6"
 ]
 
 class Landing extends Component {
@@ -43,6 +43,11 @@ class Landing extends Component {
           <Button onClick={()=>this.handlePrev()} color="black" icon='left chevron'/>
           <Video link={links[this.state.video]}/>
           <Button onClick={()=>this.handleNext()} color="black" icon='right chevron'/>
+        </div>
+        <div className="top-games">
+          <div className ="fort-box"></div>
+          <div className ="apex-box"></div>
+          <div className ="sekiro-box"></div>
         </div>
       </div>
     );
