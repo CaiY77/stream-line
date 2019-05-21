@@ -1,12 +1,11 @@
 .landing-background{
   background: #000000;
   width: 100vw;
-  height: 100vh;
-  background-attachment: fixed;
+  height: auto;
 }
 .live{
   display: flex;
-  margin: 127px 107px 0 107px;
+  margin: 127px 107px 70px 107px;
 }
 .video-contain{
   display:flex;
@@ -52,6 +51,102 @@
 .input-form{
   flex:4;
 }
+
+.stream-games{
+  display: flex;
+  justify-content: space-around;
+  margin: 60px 0 60px 0;
+}
+.view-border{
+  padding-bottom:8px;
+  border-bottom:solid white 1px;
+}
+.top-stream{
+  width: 157px;
+  object-fit: contain;
+  font-family: RobotoMono;
+  font-size: 20px;
+  letter-spacing: 2px;
+  text-align: center;
+  color: white;
+  margin: 0 auto;
+  padding: 12px 0 12px 0;
+  border-bottom: solid 4px;
+}
+.game-name{
+font-family: Raleway;
+ font-size: 16px;
+ font-weight: bold;
+ letter-spacing: 0.8px;
+ color: white;
+ margin: 8px 0 7px 0;
+}
+.view{
+  width: 248px;
+  font-family: Raleway;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 0.8px;
+  color: white;
+  margin: 0;
+}
+.view-bottom{
+  display: flex;
+}
+.live-logo{
+  padding: 0;
+  margin: 0 0 0 45px;
+  width: 51px;
+  height: 19px;
+  display: flex;
+  color: white;
+}
+.live-word{
+  font-family: Raleway;
+   font-size: 16px;
+   letter-spacing: 0.8px;
+   color: white;
+   padding:0;
+   margin-left: 5px;
+}
+.circle{
+  border:solid red;
+  background: red;
+  padding: 0;
+  margin: 0;
+  height: 13px;
+  width: 13px;
+  border-radius: 50%;
+}
+.top-games{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 60px;
+  padding-bottom: 60px;
+}
+.fort-box{
+  width: 230px;
+  height: 345px;
+  background: url(./images/fortnite.jpg);
+  background-size: contain;
+}
+.apex-box{
+  width: 230px;
+  height: 345px;
+  background: url(./images/apex.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.sekiro-box{
+  width: 230px;
+  height: 345px;
+  background: url(./images/sekiro.jpeg);
+  background-size: contain;
+}
+
+
+
+
 
 
 

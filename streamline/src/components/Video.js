@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Feed,Button,Input,Divider,Form} from 'semantic-ui-react'
+import {Feed,Divider} from 'semantic-ui-react'
 import '../App.css'
 import Faker from 'faker'
 import CommentForm from './CommentForm';
@@ -61,7 +61,6 @@ class Video extends Component {
         <Feed className="feed-style">
           {this.state.commentArr}
         </Feed>
-
         <CommentForm handleSub={this.handleSub}/>
       </div>
     </div>);
