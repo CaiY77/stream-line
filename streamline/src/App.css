@@ -144,11 +144,124 @@ font-family: Raleway;
   background-size: contain;
 }
 
-
-
-
-
-
+.act-contain{
+  background: black;
+  display: flex;
+  margin-top:76px;
+}
+.act-left{
+  width: 1053px;
+  border-right: solid white 2px;
+}
+.act-right{
+  width: 386px;
+}
+.mini-nav{
+  display: flex;
+  justify-content: space-around;
+}
+.friends{
+  width: 101px;
+  text-align: center;
+  padding:4px;
+  font-family: RobotoMono;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  border-bottom: solid 4px;
+}
+.streamers {
+  width: 112px;
+  font-family: RobotoMono;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+}
+.select{
+  text-align: right !important;
+  display: flex;
+  justify-content: flex-end;
+}
+.form-text{
+  font-family: Raleway;
+  font-size: 18px;
+  color: white;
+  padding:6px 6px 0 0;
+  margin:0;
+}
+.form-size{
+  width: 15vw;
+  margin-right: 40px;
+}
+.time-stamp{
+  width: 180px;
+  height: 27px;
+  font-family: Raleway;
+  font-size: 14px;
+  color: white;
+}
+.act-box{
+  width: 345px;
+  height: 545px;
+  background-color: rgba(34, 152, 141, 0.75);
+  margin:20px;
+  padding:47px 31px 0 31px;
+}
+.upcoming{
+  width: 209px;
+  height: 17px;
+  font-family: RobotoMono;
+  font-size: 20px;
+  color:white;
+}
+.scrim{
+  width: 283px;
+  height: 234px;
+  background: url(./images/scrim.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.fort-cup{
+  width: 283px;
+  height: 234px;
+  background: url(./images/fornite-cup.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.event1{
+  text-align: center;
+  width: 270px;
+  height: 21px;
+  font-family: Raleway;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px 5px 0px 5px;
+  color:white;
+}
+.event1-time{
+  width: 200px;
+  height: 19px;
+  font-family: Raleway;
+  font-size: 16px;
+  color: white;
+  margin: 6px 0px 3px 0px;
+}
+.event1-location{
+  width: 142px;
+  height: 19px;
+  font-family: Raleway;
+  font-size: 16px;
+  color: #ffffff;
+}
+.event1-descrip{
+  width: 270px;
+  height: 76px;
+  font-family: Raleway;
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffffff;
+  margin:45px 0 0 0;
+}
 
 
 

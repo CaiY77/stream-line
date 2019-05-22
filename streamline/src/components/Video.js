@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
-import {Feed,Divider} from 'semantic-ui-react'
+import {Feed,Divider,Modal,Button} from 'semantic-ui-react'
 import '../App.css'
 import Faker from 'faker'
 import CommentForm from './CommentForm';
+
+
 class Video extends Component {
   constructor(props) {
     super(props);
