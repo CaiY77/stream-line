@@ -4,9 +4,9 @@ import Landing from './components/Landing'
 import Explore from './components/Explore'
 import Following from './components/Following'
 import Activity from './components/Activity'
+import ChatDropDown from './components/ChatDropDown'
 import {Search} from 'semantic-ui-react'
 import logo from './images/logo-horizontal.png'
-import chat from './images/icon-chat@2x.png'
 import explore from './images/icon-explore.png'
 import star from './images/star.png'
 
@@ -40,7 +40,7 @@ class App extends Component {
           <div className="search">
             <Search placeholder="Search"/>
           </div>
-          <img className="chat-img" src={chat} alt="chat-icon" />
+          <ChatDropDown />
         </nav>
 
         <Route exact path='/' render={()=><Landing/>}/>
@@ -52,18 +52,17 @@ class App extends Component {
           <div className='footer'>
             <div className="line"></div>
           </div>
-          <div>
+          <div className="footerDetails">
             <Link className="inner" to="/">About us</Link>
             <Link className="inner" to="/">Terms</Link>
             <Link className="inner" to="/">Privacy Policy</Link>
             <Link className="inner" to="/">Contact Us</Link>
             <Link className="inner" to="/">Help</Link>
           </div>
-          <h3>Copyright 2019 - Streamline</h3>
+          <div className="copyRight">
+          <h3>&copy; 2019 - Streamline</h3>
+          </div>
         </footer>
-
-
-
           </div>
 
 
