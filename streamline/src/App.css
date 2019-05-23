@@ -341,7 +341,7 @@ footer{
   text-align: center;
   color: #ffffff;
 }
-h3{
+.copy{
   width: 228px;
   height: 19px;
   font-family: Raleway;
@@ -354,17 +354,14 @@ h3{
   text-align: center;
   color: #ffffff;
 }
-.container {
-  position: relative;
-  display: inline-block;
-}
-.button {
-  padding: 0;
-  width: 50px;
-  border: 0;
-  background-color: #fff;
-  color: #333;
-  cursor: pointer;
-  outline: 0;
-  font-size: 40px;
+.chatMenu{
+  width: 340px;
+  height: calc(100% - 150px);
+  box-shadow: 0 0 13px 2px #22988d;
+  border: solid 2px #209287;
+  background-color: #000000;
+  position: absolute;
+  top: 150px;
+  left: calc(100% - 340px);
+  z-index: 2;
 }
