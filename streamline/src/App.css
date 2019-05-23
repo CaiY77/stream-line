@@ -470,3 +470,54 @@ footer{
   left: calc(100% - 340px);
   z-index: 2;
 }
+.top{
+  display: flex;
+  height: 45px;
+}
+.chatInside{
+  width: 95px;
+ height: 25px;
+ object-fit: contain;
+ font-family: RobotoMono;
+ font-size: 20px;
+ font-weight: normal;
+ font-style: normal;
+ font-stretch: normal;
+ line-height: normal;
+ letter-spacing: 0.9px;
+ text-align: center;
+ color: #47a299;
+ margin-left: 15px;
+ margin-top: 5px;
+}
+.chatInside2{
+  margin-left: 5px;
+}
+.line{
+  width: 340px;
+  height: 1px;
+  border: solid 1px #47a299;
+}
+.line2{
+  width: 2px;
+  height: 45px;
+  border: solid 1px #47a299;
+  margin-left: 95px;
+}
+.chatContainer{
+  width: 318px;
+  height: 58px;
+  object-fit: contain;  
+}
+.chatTitle{
+  width: 255px;
+  height: 25px;
+  font-family: Raleway;
+  font-size: 21px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 0.7px;
+  color: #47a299;
+}
