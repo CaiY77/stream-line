@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import chat from '../images/icon-chat@2x.png'
+import face from '../images/face.png'
 
 
 class ChatDropDown extends Component {
@@ -22,6 +23,7 @@ class ChatDropDown extends Component {
       document.addEventListener('click', this.closeMenu);
     });
   }
+
 
   closeMenu(event) {
 
@@ -49,7 +51,31 @@ class ChatDropDown extends Component {
                   this.dropdownMenu = element;
                 }}
               >
-                <div className="chatMenu"></div>
+                <div className="chatMenu">
+
+                  <div className="top">
+                  <div className="chatInside">Channel</div>
+                  <div className="line2"></div>
+                  <div className="chatInside"><img className="chatInside chatInside2" src={face} alt="little"/></div>
+                  </div>
+                  <div className="line"></div>
+
+                  <div className="chatContainer">
+                  <img src={chat} alt="text" />
+                  <Link className="chatTitle">Fortnite Fun Friends</Link>
+                  </div>
+
+                  <div className="chatContainer">
+                  <img src={chat} alt="text" />
+                  <Link className="chatTitle"> Apex Gang</Link>
+                  </div>
+
+                  <div className="chatContainer">
+                  <img src={chat} alt="text" />
+                  <Link className="chatTitle"> Harder Than Dark Souls</Link>
+                  </div>
+
+                </div>
               </div>
             )
             : (
