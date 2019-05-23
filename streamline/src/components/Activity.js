@@ -1,5 +1,11 @@
 import React, { Component } from 'react';
 import {Form} from 'semantic-ui-react'
+import Comment from "./Comment"
+import Status from "./Status"
+import Mi from '../images/mi.png'
+import Pika from '../images/pika.png'
+import Pex from '../images/pex.jpg'
+import For from '../images/for.png'
 import '../App.css'
 import Faker from 'faker'
 const options = [
@@ -28,11 +34,11 @@ class Activity extends Component {
             <p className="form-text" >Filter By: </p>
             <Form.Select className="form-size" placeholder= "Likes, Comments..." fluid options={options} />
           </div>
-
-          <div className="comment-form">
-            <p className="time-stamp">29 May 2019 10:10 PM</p>
-
-          </div>
+          <Comment fake={For} who={Pika} date="29 May 2019 10:10 PM" name="Ash J.K" action="Commented: "/>
+          <Status who={Pika} date="29 May 2019 10:21 PM" name="Ash J.K" action="started following KHeartStick"/>
+          <Status who={Mi} date="29 May 2019 10:10 PM" name="Midori.aiya" action="is now LIVE playing Overwatch"/>
+          <Status who={Mi} date="29 May 2019 9:54 PM" name="Midori.aiya" action="started following KHeartStick"/>
+          <Comment fake={Pex} who={Mi} date="29 May 2019 9:43 PM" name="Midori.aiya" action="Commented: "/>
         </div>
         <div className="act-right">
           <h3 className="upcoming">Upcoming Events</h3>

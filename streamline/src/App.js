@@ -12,16 +12,6 @@ import star from './images/star.png'
 
 
 class App extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      top10: []
-    };
-  }
-
-  componentDidMount() {
-
-  }
 
   render() {
     return (
