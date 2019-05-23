@@ -7,9 +7,9 @@ import Faker from 'faker'
 
 
 const links=[
-"https://www.youtube.com/embed/OUuhnZ4A9cg?autoplay=0&?start=885",
-"https://www.youtube.com/embed/UWNoSGjt_dU?autoplay=0&?start=12",
-"https://www.youtube.com/embed/QsawpqAney0?autoplay=0&?start=6"
+"https://www.youtube.com/embed/OUuhnZ4A9cg?autoplay=1&?start=885",
+"https://www.youtube.com/embed/UWNoSGjt_dU?autoplay=1&?start=12",
+"https://www.youtube.com/embed/QsawpqAney0?autoplay=1&?start=6"
 ]
 const stream=[
   "https://www.youtube.com/embed/attMWXHVM40?start=2",

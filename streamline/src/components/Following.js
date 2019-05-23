@@ -5,12 +5,8 @@ class Following extends Component {
 
   render() {
     return (
-      <div>
-        <Modal trigger={<h1>Following</h1>}>
-          <Modal.Content>
-            <h1>HelloWorld</h1>
-          </Modal.Content>
-        </Modal>
+      <div className="comming-soon-contain">
+        <h1 className="comming-soon"> COMMING SOON!!! :D</h1>
       </div>
     );
   }

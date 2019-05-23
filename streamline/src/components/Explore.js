@@ -4,8 +4,8 @@ class Explore extends Component {
 
   render() {
     return (
-      <div>
-        <h1>Explore</h1>
+      <div className="comming-soon-contain">
+        <h1 className="comming-soon"> COMMING SOON!!! :D</h1>
       </div>
     );
   }
