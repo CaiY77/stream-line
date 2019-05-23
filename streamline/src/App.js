@@ -50,7 +50,7 @@ class App extends Component {
             <Link className="inner" to="/">Help</Link>
           </div>
           <div className="copyRight">
-          <h3>&copy; 2019 - Streamline</h3>
+          <h3 className="copy">&copy; 2019 - Streamline</h3>
           </div>
         </footer>
           </div>
